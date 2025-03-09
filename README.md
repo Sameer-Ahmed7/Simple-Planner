@@ -29,8 +29,6 @@ This project focuses on finding an optimal path between two points starting poin
 │           └── path_planner_node.cpp  --> Implementation of the path planner node.
 ├── .catkin_workspace  --> Indicates this directory is a catkin workspace.
 └── README.md          --> Documentation for the repository.
-
-
 ```
 ## Demonstration Videos
 ### Vatican City Path Planner
