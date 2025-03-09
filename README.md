@@ -4,6 +4,8 @@ Simple Planner
 # Overview
 This repository contains the implementation of the Simple Planner. The project was developed as part of the course **Robot Programming**, taught by Professor **Giorgio Grisetti**, as part of my Master’s in AI and Robotics at Sapienza University of Rome. 
 
+This project focuses on finding an optimal path between two points starting point and goal point while avoiding any obstacles. The primary goal is to create a clear, obstacle-free path between the two points. To achieve this, the A* search algorithm is used to find the most efficient path.
+
 ## Demonstration Videos
 ### Vatican City Path Planner
 [![Watch the video](https://img.youtube.com/vi/a_FXH-olXFI/maxresdefault.jpg)](https://youtu.be/a_FXH-olXFI)
