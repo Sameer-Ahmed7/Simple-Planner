@@ -6,6 +6,32 @@ This repository contains the implementation of the Simple Planner. The project w
 
 This project focuses on finding an optimal path between two points starting point and goal point while avoiding any obstacles. The primary goal is to create a clear, obstacle-free path between the two points. To achieve this, the A* search algorithm is used to find the most efficient path.
 
+
+## Directory Structure
+```
+📦 Simple-Planner
+├── 📂 assets  
+│   └── ...  --> Images of maps
+├── 📂 build
+│   └── ...  --> Build files generated during the build process.
+├── 📂 devel
+│   └── ...  --> Development files and environment setup.
+├── 📂 src
+│   └── CMakeLists.txt    --> CMake configuration for the overall project.
+│   └── simple_path_planner
+│       ├── CMakeLists.txt  --> CMake configuration for the path planner package.
+│       ├── package.xml    --> ROS package manifest.
+│       ├── planner.launch --> Launch file to start the path planner node.
+│       ├── maps
+│       │   └── vatican_image.png  --> Map image used for path planning.
+│       │   └── maze.png  --> Map image used for path planning.
+│       └── src
+│           └── path_planner_node.cpp  --> Implementation of the path planner node.
+├── .catkin_workspace  --> Indicates this directory is a catkin workspace.
+└── README.md          --> Documentation for the repository.
+
+
+```
 ## Demonstration Videos
 ### Vatican City Path Planner
 [![Watch the video](https://img.youtube.com/vi/a_FXH-olXFI/maxresdefault.jpg)](https://youtu.be/a_FXH-olXFI)
