@@ -1,3 +1,5 @@
-# Simple-Planner
+# Project Title:
+Simple Planner
 
-[![Watch the video](assets/vatican_image.png)](https://www.youtube.com/watch?v=a_FXH-olXFI&ab_channel=SameerAhmed)
+# Overview
+This repository contains the implementation of the Simple Planner. The project was developed as part of the course **Robot Programming**, taught by Professor **Giorgio Grisetti**, as part of my Master’s in AI and Robotics at Sapienza University of Rome. 
