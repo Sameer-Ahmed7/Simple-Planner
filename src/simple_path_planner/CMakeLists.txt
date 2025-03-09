@@ -23,7 +23,7 @@ include_directories(
 )
 
 ## Declare a C++ executable
-add_executable(${PROJECT_NAME}_node src/${PROJECT_NAME}_node.cpp)
+add_executable(${PROJECT_NAME}_node src/path_planner_node.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node

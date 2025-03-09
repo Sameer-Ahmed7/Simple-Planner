@@ -707,32 +707,32 @@ visualization_msgs_generate_messages_py/fast:
 	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make simple_path_planner/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
 
-src/simple_path_planner_node.o: src/simple_path_planner_node.cpp.o
+src/path_planner_node.o: src/path_planner_node.cpp.o
 
-.PHONY : src/simple_path_planner_node.o
+.PHONY : src/path_planner_node.o
 
 # target to build an object file
-src/simple_path_planner_node.cpp.o:
-	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/simple_path_planner_node.dir/build.make simple_path_planner/CMakeFiles/simple_path_planner_node.dir/src/simple_path_planner_node.cpp.o
-.PHONY : src/simple_path_planner_node.cpp.o
+src/path_planner_node.cpp.o:
+	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/simple_path_planner_node.dir/build.make simple_path_planner/CMakeFiles/simple_path_planner_node.dir/src/path_planner_node.cpp.o
+.PHONY : src/path_planner_node.cpp.o
 
-src/simple_path_planner_node.i: src/simple_path_planner_node.cpp.i
+src/path_planner_node.i: src/path_planner_node.cpp.i
 
-.PHONY : src/simple_path_planner_node.i
+.PHONY : src/path_planner_node.i
 
 # target to preprocess a source file
-src/simple_path_planner_node.cpp.i:
-	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/simple_path_planner_node.dir/build.make simple_path_planner/CMakeFiles/simple_path_planner_node.dir/src/simple_path_planner_node.cpp.i
-.PHONY : src/simple_path_planner_node.cpp.i
+src/path_planner_node.cpp.i:
+	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/simple_path_planner_node.dir/build.make simple_path_planner/CMakeFiles/simple_path_planner_node.dir/src/path_planner_node.cpp.i
+.PHONY : src/path_planner_node.cpp.i
 
-src/simple_path_planner_node.s: src/simple_path_planner_node.cpp.s
+src/path_planner_node.s: src/path_planner_node.cpp.s
 
-.PHONY : src/simple_path_planner_node.s
+.PHONY : src/path_planner_node.s
 
 # target to generate assembly for a file
-src/simple_path_planner_node.cpp.s:
-	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/simple_path_planner_node.dir/build.make simple_path_planner/CMakeFiles/simple_path_planner_node.dir/src/simple_path_planner_node.cpp.s
-.PHONY : src/simple_path_planner_node.cpp.s
+src/path_planner_node.cpp.s:
+	cd /home/sameerahmed/Simple-Planner/build && $(MAKE) -f simple_path_planner/CMakeFiles/simple_path_planner_node.dir/build.make simple_path_planner/CMakeFiles/simple_path_planner_node.dir/src/path_planner_node.cpp.s
+.PHONY : src/path_planner_node.cpp.s
 
 # Help Target
 help:
@@ -783,9 +783,9 @@ help:
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... install"
 	@echo "... visualization_msgs_generate_messages_py"
-	@echo "... src/simple_path_planner_node.o"
-	@echo "... src/simple_path_planner_node.i"
-	@echo "... src/simple_path_planner_node.s"
+	@echo "... src/path_planner_node.o"
+	@echo "... src/path_planner_node.i"
+	@echo "... src/path_planner_node.s"
 .PHONY : help
 
 
