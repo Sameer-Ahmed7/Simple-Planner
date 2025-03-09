@@ -1,0 +1,8 @@
+prefix=/home/sameerahmed/Simple-Planner/install
+
+Name: simple_path_planner
+Description: Description of simple_path_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

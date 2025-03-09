@@ -1,0 +1,18 @@
+<launch>
+  <arg name="h" default="e" />
+  
+  <arg name="p" default="1000" />
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find simple_path_planner)/maps/map.yaml"/>
+  
+  <node name="simple_path_planner_node" pkg="simple_path_planner" type="simple_path_planner_node" output="screen">
+    <param name="initialpose" value="initialpose"/>
+    <param name="goalpose" value="move_base_simple/goal"/>
+    <param name="map" value="map"/>
+    <param name="heuristic_type" value="$(arg h)" />
+    <param name="penalty" value="$(arg p)" />
+  </node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find simple_path_planner)/rviz/your_rviz_config.rviz" />
+</launch>
+
