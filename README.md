@@ -26,5 +26,24 @@ Defines the heuristic function used for path planning. Available options:
 This argument penalizes paths passing through obstacles by increasing the cost. The higher the penalty, the less likely A* will consider paths through obstacles.
 - **Default:** `p=1000.0`
 
+# Installation & Setup
+### Prerequisites
+- Install **ROS1 Noetic** on your Linux machine.
+
+### Clone the Repository
+```bash
+git clone "https://github.com/Sameer-Ahmed7/Simple-Planner.git"
+```
+
+### Build the Package
+```bash
+cd Simple-Planner
+source devel/setup.bash
+cd src/
+cd simple_path_planner/
+```
+
+
+
 
 
