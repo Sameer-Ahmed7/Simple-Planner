@@ -42,6 +42,30 @@ source devel/setup.bash
 cd src/
 cd simple_path_planner/
 ```
+### Running the Planner
+#### Start ROS Core
+Open a new terminal and run:
+```bash
+roscore
+```
+
+#### Launch the Path Planner
+Since a launch file is provided, all necessary components (map server, RViz, etc.) will start automatically:
+```bash
+roslaunch simple_path_planner planner.launch h:='m' p:='1000'
+```
+*Modify `h` and `p` values as needed.*
+
+# Customizing the Map
+The default map used is **vatican_image.png**. If you want to use a different map:
+1. Add the new map image to the `map` folder.
+2. Edit the `.yaml` file and change `vatican_image.png` to your desired map file.
+
+---
+
+Developed by **Sameer Ahmed** 🚀
+
+
 
 
 
