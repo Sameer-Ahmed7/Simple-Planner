@@ -14,42 +14,46 @@ This repository contains the implementation of the Simple Planner. The project w
 # Functionality
 This project implements the **A* Search Algorithm** to determine the optimal path while considering different heuristics and penalties for obstacles.
 
-### Arguments
-#### `h` (Heuristic Distance)
+## Features
+- **Valid Start and Goal Points**: The starting point and goal point cannot be placed on obstacles; they must be placed on free space.
+- **Dynamic Path Update**: If the starting point or goal point is changed, the path is automatically updated in real-time.
+
+## Arguments
+### `h` (Heuristic Distance)
 Defines the heuristic function used for path planning. Available options:
 - `h='m'` → **Manhattan Distance**
 - `h='e'` → **Euclidean Distance**
 - `h='c'` → **Chebyshev Distance**
 - **Default:** Manhattan Distance (`h='m'`)
 
-#### `p` (Penalty for Obstacles)
+### `p` (Penalty for Obstacles)
 This argument penalizes paths passing through obstacles by increasing the cost. The higher the penalty, the less likely A* will consider paths through obstacles.
 - **Default:** `p=1000.0`
 
 # Installation & Setup
-### Prerequisites
+## Prerequisites
 - Install **ROS1 Noetic** on your Linux machine.
 
-### Clone the Repository
+## Clone the Repository
 ```bash
 git clone "https://github.com/Sameer-Ahmed7/Simple-Planner.git"
 ```
 
-### Build the Package
+## Build the Package
 ```bash
 cd Simple-Planner
 source devel/setup.bash
 cd src/
 cd simple_path_planner/
 ```
-### Running the Planner
-#### Start ROS Core
+## Running the Planner
+### Start ROS Core
 Open a new terminal and run:
 ```bash
 roscore
 ```
 
-#### Launch the Path Planner
+### Launch the Path Planner
 Since a launch file is provided, all necessary components (map server, RViz, etc.) will start automatically:
 ```bash
 roslaunch simple_path_planner planner.launch h:='m' p:='1000'
@@ -61,9 +65,7 @@ The default map used is **vatican_image.png**. If you want to use a different ma
 1. Add the new map image to the `map` folder.
 2. Edit the `.yaml` file and change `vatican_image.png` to your desired map file.
 
----
 
-Developed by **Sameer Ahmed** 🚀
 
 
 
