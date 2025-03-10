@@ -18,7 +18,7 @@ bool is_map_valid = false;
 
 
 // Add flags to track if the messages have been printed
-bool path_created = false;
+
 bool goal_reached = false;
 
 // Subscriber (start_position,goal_position, map_data)
@@ -97,7 +97,7 @@ void mapDataCallback(const nav_msgs::OccupancyGrid::ConstPtr& msg)
     global_map_ptr = msg;
     is_map_valid = true;
     
-    path_created = false;
+    
     goal_reached = false;
     
     ROS_INFO("Map received with resolution: %f", map_data.info.resolution);
@@ -136,7 +136,7 @@ void startPoseCallback(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr&
     start_position = msg->pose.pose.position;
     is_start_valid = checkIfFreeSpace(start_position);
     
-    path_created = false;
+    
     goal_reached = false;
     
     
@@ -158,7 +158,7 @@ void goalPoseCallback(const geometry_msgs::PoseStamped::ConstPtr& msg)
     is_goal_valid = checkIfFreeSpace(goal_position);
     
     
-    path_created = false;
+    
     goal_reached = false;
     
     
@@ -292,10 +292,7 @@ std::vector<geometry_msgs::Point> findOptimalPath()
             std::vector<geometry_msgs::Point> path;
             int index = goal_y * map_width + goal_x;
             
-            if(goal_reached == false){
-            	ROS_INFO("Reached Goal Successfully");
-            	goal_reached == true;
-            }
+            
             
             // Reconstruct path from goal to start
             while (came_from.count(index))
@@ -383,6 +380,7 @@ void publishPathMarkers()
 			path_marker.points.push_back(point);
 		    
 		    marker_publisher.publish(path_marker);
+		    ROS_INFO("Reached Goal Successfully");
 		    ROS_INFO("Path Created");
 		    }
 		    
@@ -433,4 +431,3 @@ int main(int argc, char** argv)
     }
     return 0;
 }
-
